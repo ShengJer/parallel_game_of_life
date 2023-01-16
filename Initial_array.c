@@ -33,7 +33,7 @@ int main(int *argc, char *argv[])
 		for (j=0; j<n; j++)
 		{
 			array[i*n+j] = (int) rand() % 2;
-			printf("the array[%d] = %d\n", i*n+j, array[i*n+j]);
+			//printf("the array[%d] = %d\n", i*n+j, array[i*n+j]);
 		}
 	}	
 	
