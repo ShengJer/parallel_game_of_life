@@ -19,7 +19,9 @@ neighbors or more than three neighbors becomes a dead cell. All cells are update
 ## Result
 * n=m=100
 * k=100
-* j=1
+* j=1 <br>
+
+
 ![game_of_life_gif](animation/game_of_life.gif)
 
 
