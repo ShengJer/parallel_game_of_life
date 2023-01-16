@@ -6,28 +6,31 @@
 Design two program. One is the program with name “Initial_array.c” which takes in two argument m and n. m and n are the dimension of initial array. It would output the array as binary format to a file named “initial_array.out” and index value m, n to a file named “index.out”. After that, the second program named “code.c” would get the value k and j from command line and read the two output files to theprogram. k is the maximum iterations while j is the number of iteration to print out the array. Subsequently, it would divide the arrayby row and assign them to different processors. Each processor follow the rule of game of life.
 
 ### compiling
-* requirement
- - gcc
- - mpicc <br> 
-Use the following command in the terminal
-* Initial_array.c
-* suppose m=20, n=10 <br>
-'''
+1. requirement
+   * gcc
+   * mpicc <br> 
+
+2. Use the following command in the terminal
+   * Initial_array.c
+   * suppose m=20, n=10 <br>
+
+```
 gcc Initial_array.c -o Initial_run
 
 ./Initial_run 20 10
 
-'''
-It would create two file initial_arry.out and index.out <br>
-* for code.c
-* suppose k=100, j=10
-* suppose number of processors = 4 <br>
-'''
+```
+3. It would create two file initial_arry.out and index.out <br>
+   * for code.c
+   * suppose k=100, j=10
+   * suppose number of processors = 4 <br>
+
+```
 mpicc code.c -o run
 
 mpirun -np 4 run 100 10
 
-'''
+```
 the programming would output the binary file to ./output
 
 ## The rule of game of life
